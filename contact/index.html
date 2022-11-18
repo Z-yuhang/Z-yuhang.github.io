@@ -406,7 +406,12 @@
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;
                     留言板
                 </div>
-                
+                <ol>
+<li>对此博客有任何疑问欢迎留言🙌</li>
+<li>留言建议留下你的qq号&#x2F;昵称（输入qq号自动拉取昵称），方便及时收到博主回复💖</li>
+<li>本站支持丰富的表情，满足你的个性需求</li>
+</ol>
+
             </div>
         </div>
         <!--其他评论card-->
@@ -664,11 +669,10 @@
         el: '#vcomments',
         appId: 'e3vbdTBAOSLivm3rnxkqZI6q-gzGzoHsz',
         appKey: 'o35Hv27mkI7Hzj9163ymcOho',
-        serverURLs: '',
         notify: 'false' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'false' === 'true',
-        avatar: 'mm',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
         placeholder: 'just go go',
@@ -726,7 +730,9 @@
         "tv_鬼脸": "0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png",
         "tv_黑人问号": "45821a01f51bc867da9edbaa2e070410819a95b2.png",
         "tv_鼓掌": "1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"
+            // ... 更多表情
         },
+        requiredFields: ['nick','mail'], //设置必填项
     });
 </script>
 
